@@ -1,0 +1,107 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'grunt' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData grunt
+8 silly fetchNamedPackageData grunt
+9 silly mapToRegistry name grunt
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'grunt',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'grunt',
+12 silly mapToRegistry   name: 'grunt',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/grunt
+14 verbose request uri https://registry.npmjs.org/grunt
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 11:04:00 AM
+17 verbose request id 2724115f29730463
+18 http request GET https://registry.npmjs.org/grunt
+19 http 200 https://registry.npmjs.org/grunt
+20 verbose headers { 'content-type': 'application/json; charset=UTF-8',
+20 verbose headers   server: 'UploadServer',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   'last-modified': 'Thu, 21 Dec 2017 19:05:18 GMT',
+20 verbose headers   etag: '"5a3c05ee-18d23"',
+20 verbose headers   'content-encoding': 'gzip',
+20 verbose headers   'content-length': '11518',
+20 verbose headers   'accept-ranges': 'bytes',
+20 verbose headers   date: 'Fri, 22 Dec 2017 16:04:00 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   age: '1716',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-yyz8328-YYZ',
+20 verbose headers   'x-cache': 'HIT',
+20 verbose headers   'x-cache-hits': '1',
+20 verbose headers   'x-timer': 'S1513958641.659636,VS0,VE1',
+20 verbose headers   vary: 'Accept-Encoding, Accept' }
+21 silly get cb [ 200,
+21 silly get   { 'content-type': 'application/json; charset=UTF-8',
+21 silly get     server: 'UploadServer',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     'last-modified': 'Thu, 21 Dec 2017 19:05:18 GMT',
+21 silly get     etag: '"5a3c05ee-18d23"',
+21 silly get     'content-encoding': 'gzip',
+21 silly get     'content-length': '11518',
+21 silly get     'accept-ranges': 'bytes',
+21 silly get     date: 'Fri, 22 Dec 2017 16:04:00 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     age: '1716',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-yyz8328-YYZ',
+21 silly get     'x-cache': 'HIT',
+21 silly get     'x-cache-hits': '1',
+21 silly get     'x-timer': 'S1513958641.659636,VS0,VE1',
+21 silly get     vary: 'Accept-Encoding, Accept' } ]
+22 verbose get saving grunt to C:\Users\s_xu9\AppData\Roaming\npm-cache\registry.npmjs.org\grunt\.cache.json
+23 verbose correctMkdir C:\Users\s_xu9\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+24 verbose makeDirectory C:\Users\s_xu9\AppData\Roaming\npm-cache creation not in flight; initializing
+25 verbose makeCacheDir UID & GID are irrelevant on win32
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly rollbackFailedOptional Starting
+39 silly rollbackFailedOptional Finishing
+40 silly runTopLevelLifecycles Finishing
+41 silly install printInstalled
+42 verbose stack Error: Refusing to install grunt as a dependency of itself
+42 verbose stack     at checkSelf (C:\Program Files\nodejs\node_modules\npm\lib\install\validate-args.js:53:14)
+42 verbose stack     at Array.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+42 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+42 verbose stack     at chain (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+42 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install\validate-args.js:16:5
+42 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:52:35
+42 verbose stack     at Array.forEach (native)
+42 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:52:11
+42 verbose stack     at Array.forEach (native)
+42 verbose stack     at asyncMap (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:51:8)
+43 verbose cwd C:\Users\s_xu9\Desktop\grunt
+44 error Windows_NT 6.1.7601
+45 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save" "grunt"
+46 error node v6.11.1
+47 error npm  v3.10.10
+48 error code ENOSELF
+49 error Refusing to install grunt as a dependency of itself
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

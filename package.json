@@ -1,21 +1,30 @@
 {
-  "name": "testgrunt",
+  "name": "grunt",
   "version": "1.0.0",
-  "description": "trying out grunt",
+  "description": "this is my grunt",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xushengke/grunt.git"
+  },
   "keywords": [
     "grunt.",
     "test.",
-    "this.",
     "is.",
     "fun"
   ],
   "author": "me",
-  "license": "ISC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xushengke/grunt/issues"
+  },
+  "homepage": "https://github.com/xushengke/grunt#readme",
   "dependencies": {
-    "grunt": "^1.0.1"
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "git://github.com/gruntjs/grunt-contrib-uglify.git#harmony",
+    "grunttest": "^1.0.0"
   }
 }
